@@ -1,13 +1,14 @@
 
 
 function ItemPrice(props){
-   let itemPrice =props.itemPrice
-    return (
+  return(
       <div>
-           <p className="price">{itemPrice}</p>
-           {props.children}
+        <p>
+          {props.itemPrice}
+        </p>
+        {props.children}
       </div>
-    )
+  )
 };
 
 export default ItemPrice;
