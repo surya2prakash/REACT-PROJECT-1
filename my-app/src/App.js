@@ -3,11 +3,6 @@ import './App.css';
 
 import Card from './Component/Card';
 
-import Items from './Component/Items';
-
-import ItemPrice from './Component/ItemPrice';
-
-
 
 
 function App() {
@@ -37,28 +32,20 @@ function App() {
     {
       itemName:" Apple 16",
       itemPrice:"49,999"
-    }
+    },
+
+ 
   ]
 
 
   return (
     <div className="App">
-          <Card>
-              <Items itemName={response[0].itemName}></Items>
-              <ItemPrice itemPrice={response[0].itemPrice}></ItemPrice>
-              <Items itemName={response[1].itemName}></Items>
-              <ItemPrice itemPrice={response[1].itemPrice}></ItemPrice>
-              <Items itemName={response[2].itemName}></Items>
-              <ItemPrice itemPrice={response[2].itemPrice}></ItemPrice>
-              <Items itemName={response[3].itemName}></Items>
-              <ItemPrice itemPrice={response[3].itemPrice}></ItemPrice>
-              <Items itemName={response[4].itemName}></Items>
-              <ItemPrice itemPrice={response[4].itemPrice}></ItemPrice>
-              <Items itemName={response[5].itemName}></Items>
-              <ItemPrice itemPrice={response[5].itemPrice}></ItemPrice>
-          </Card>
+      
+         <Card   response={response}>  </Card>
+             
     </div>
   );
 }
 
 export default App;
+
