@@ -1,15 +1,12 @@
 
 
-function Items(props){
-    let itemName =props.itemName
-   return (
+function Items (props){
+    return(
+        <div>
+                <p>{props.itemName}</p>
+                {props.children}
+        </div>
+    )
+}
 
-    
-    <div>
-        <p className="item">{itemName}</p>
-        {props.children}
-    </div>
-   )
-};
-
-export default Items;
+export default  Items;
