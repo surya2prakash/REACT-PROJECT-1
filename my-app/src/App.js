@@ -1,12 +1,15 @@
 
+import { useState } from 'react';
 import './App.css';
 
 import Card from './Component/Card';
+import Main from './Component/MainPage';
 
 
 
 function App() {
 
+  
 
   let response =[
     {
@@ -36,12 +39,17 @@ function App() {
 
  
   ]
-
-
+const [item ,setItem] = useState(response);
+  function  printProduct(data){
+      setItem((response)=>[...response,data])
+       
+       console.log(response);
+  }
+  
   return (
     <div className="App">
-      
-         <Card   response={response}>  </Card>
+        <Main sendProduct={printProduct}></Main>
+         <Card   response={item}>  </Card>
              
     </div>
   );
