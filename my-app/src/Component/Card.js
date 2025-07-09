@@ -1,10 +1,11 @@
 import SingleCard from "./SingleCard"
 
+import "./Card.css"
 
 
 function Card (props){
     return (
-        <div>
+        <div className="mainCard">
               {/* <SingleCard  itemName={props.response[0].itemName} itemPrice={props.response[0].itemPrice}> </SingleCard>
               <SingleCard  itemName={props.response[1].itemName} itemPrice={props.response[1].itemPrice}> </SingleCard>
               <SingleCard  itemName={props.response[2].itemName} itemPrice={props.response[2].itemPrice}> </SingleCard>

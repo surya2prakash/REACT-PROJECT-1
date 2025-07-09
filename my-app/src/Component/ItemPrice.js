@@ -1,4 +1,4 @@
-
+import './ItemPrice.css'
 
 function ItemPrice(props){
   return(
